@@ -1,6 +1,8 @@
 import subprocess
+import sys
 
-command = "dir"
+os = sys.platform
+command = "dir" if os == "win32" else "ls"
 
 result = subprocess.run(command, shell=True, text=True, capture_output=True)
 
