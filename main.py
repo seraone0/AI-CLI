@@ -1,6 +1,5 @@
 import subprocess
 import sys
-from importlib.metadata import requires
 
 os = sys.platform
 # command = "dir" if os == "win32" else "ls"
